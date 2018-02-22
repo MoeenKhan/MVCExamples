@@ -1,0 +1,13 @@
+﻿@{ 
+    string[] members = {"Joe", "Mark", "Stella"}; 
+    int i = Array.IndexOf(members, "Stella")+1; 
+    int len = members.Length; 
+    string x = members[2-1]; 
+    }
+
+<h3>Student Details</h3> 
+@foreach (var person in members) 
+{ <p>@person</p> } 
+<p>The number of students in class are @len</p> 
+<p>The student at position 2 is @x</p> 
+<p>Stella is now in position @i</p>

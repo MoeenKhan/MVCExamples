@@ -1,0 +1,17 @@
+﻿@{ 
+    var day=DateTime.Now.DayOfWeek.ToString();
+    var msg=""; 
+    }
+
+@switch(day)
+    { case "Monday":
+        msg="Today is Monday, the first working day.";
+        break; 
+    case "Friday":    
+        msg="Today is Friday, the last working day.";    
+        break; 
+    default:
+        msg = "Today is " + day;    
+        break; 
+} 
+<p>@msg</p>

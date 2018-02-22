@@ -1,0 +1,9 @@
+﻿@{ var products = new string[] {"Laptop", "Desktop", "Printer"}; }
+<html>
+<head>
+    <title>Test View</title>
+</head>
+<body>
+    <ul> @foreach (var product in products) { <li>The product is @product.</li> } </ul>
+</body>
+</html> 
